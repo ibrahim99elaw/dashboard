@@ -1,0 +1,177 @@
+    *{
+        padding: 0;
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    body{
+        background-color: #001;
+        display: flex;
+        color: white;
+    }
+    ul{
+        list-style: none;
+    }
+    a{
+        text-decoration: none;
+    }
+
+    .menu{
+        width: 60px;
+        background-color: #123;
+        height: 100vh;
+        padding: 20px;
+        overflow: hidden;
+        transition: 0.5s;
+    }
+    .menu:hover{
+    width: 260px;
+    }
+    .menu ul{
+        height: 100%;
+        align-items: center;
+        height: 95%;
+        position: relative;
+    }
+     
+    .profile{
+        display: flex;
+        gap: 30px;
+        align-items: center;
+        margin-bottom: 10px;
+
+    }
+    .profile .img_box{
+        width: 50px;
+        border-radius: 50px;
+        overflow: hidden;
+        border:  3px solid white;
+                flex-shrink: 0;
+
+    }
+    .profile img{
+        width: 100%;
+    }
+    .profile h2{
+        color: white;
+        font-size: 20px;
+        text-transform: capitalize;
+    }
+    .menu ul li a{
+        align-items: center;
+        color: white;
+        display: block;
+        display: flex;
+        gap: 50px;
+        padding: 10px;
+        margin: 5px 0;
+        border-radius: 8px;
+        transition: 0.5s;
+    }
+      .menu ul li a i{
+        font-size: 25px;
+      }
+    .menu ul li a:hover ,.active{
+        background-color: #ffffff55;
+    }
+
+.log_out{
+    position: absolute;
+    bottom: 0;    
+    width: 100%;
+}
+.log_out a{
+    background-color: red;
+}
+
+.content{
+    width: 100%;
+    margin: 10px;
+}
+.title_info{
+    background-color: #0481ff;
+    padding: 10px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 8px;
+}
+
+.data_info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.data_info .box{
+    background-color: #123;
+    height: 150px;
+    flex-basis: 150px;
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 8px;
+}
+.data_info .box:hover{
+    background-color: #ffffff55;
+}
+.data_info .box i{
+    font-size: 35px;
+}
+.data_info .box .data{
+    text-align: center;
+}
+.data_info .box .data span{
+    font-size: 30px;
+}
+
+table{
+    width: 100%;
+    text-align: center;
+    border-spacing: 8px;
+}
+th ,td{
+    height: 40px;
+    background-color: #123;
+    border-radius: 8px;
+}
+th ,td:hover{
+    background-color: #ffffff55;
+}
+th{
+    background-color: #0481ff;
+}
+
+.price , .count{
+    padding: 6px;
+    border-radius: 6px;
+}
+.price{
+    background-color: green;
+}
+.count{
+    background-color: gold;
+    color: black;
+}
+
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    display: none;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    z-index: 1000;
+    transition: background-color 0.3s;
+}
+
+#back-to-top:hover {
+    background-color: #555;
+}
